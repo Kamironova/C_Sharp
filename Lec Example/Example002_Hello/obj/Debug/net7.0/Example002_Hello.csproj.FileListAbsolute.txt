@@ -1,0 +1,15 @@
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/bin/Debug/net7.0/Example002_Hello
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/bin/Debug/net7.0/Example002_Hello.deps.json
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/bin/Debug/net7.0/Example002_Hello.runtimeconfig.json
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/bin/Debug/net7.0/Example002_Hello.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/bin/Debug/net7.0/Example002_Hello.pdb
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.csproj.AssemblyReference.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.AssemblyInfoInputs.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.AssemblyInfo.cs
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.csproj.CoreCompileInputs.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/refint/Example002_Hello.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.pdb
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/Example002_Hello.genruntimeconfig.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example002_Hello/obj/Debug/net7.0/ref/Example002_Hello.dll

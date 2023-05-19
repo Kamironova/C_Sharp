@@ -1,0 +1,15 @@
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/bin/Debug/net7.0/Example001_HalloWorld
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/bin/Debug/net7.0/Example001_HalloWorld.deps.json
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/bin/Debug/net7.0/Example001_HalloWorld.runtimeconfig.json
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/bin/Debug/net7.0/Example001_HalloWorld.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/bin/Debug/net7.0/Example001_HalloWorld.pdb
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.csproj.AssemblyReference.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.AssemblyInfoInputs.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.AssemblyInfo.cs
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.csproj.CoreCompileInputs.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/refint/Example001_HalloWorld.dll
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.pdb
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/Example001_HalloWorld.genruntimeconfig.cache
+/Users/kamironova/Desktop/C# EDU/Lec Example/Example001_HalloWorld/obj/Debug/net7.0/ref/Example001_HalloWorld.dll
