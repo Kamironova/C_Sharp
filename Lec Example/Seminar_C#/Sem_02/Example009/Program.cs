@@ -12,12 +12,14 @@ int a = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите второе число -->");
 int b = Convert.ToInt32(Console.ReadLine());
 
-if (a % b == 0)
+int result = a % b;
+
+if (result == 0)
 {
     System.Console.WriteLine($"{a},{b} --> кратно");
 }
-else 
+else
 {
-    int x = a % b;
-    System.Console.WriteLine($"{a}, {b} --> не кратно, остаток от деления {x}");
+
+    System.Console.WriteLine($"{a}, {b} --> не кратно, остаток от деления {result}");
 }
