@@ -4,6 +4,7 @@
 // 82 -> 10
 // 9012 -> 12
 
+//  DONE!!
 
 int SumNum(int num)
 {
