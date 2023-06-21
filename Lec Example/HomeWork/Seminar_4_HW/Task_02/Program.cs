@@ -3,3 +3,24 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
+
+int SumNum(int num)
+{
+    int sum = 0;
+    while (num != 0)
+    {
+        sum += num % 10;
+        num /= 10;
+
+    }
+    return sum;
+}
+
+Console.Clear();
+
+System.Console.WriteLine("Введите число --> ");
+int num = int.Parse(Console.ReadLine()!);
+
+
+System.Console.WriteLine($"{num} --> {SumNum(num)}");
