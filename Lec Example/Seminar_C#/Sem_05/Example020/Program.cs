@@ -56,7 +56,7 @@ int[] FindSum2(int[] array) // функция возвращающая масс�
             sumN+=array[i];
         }
     }
-    int[] result = {sumN, sumP};
+    int[] result = {sumN, sumP}; // тут создали массив с результатом
     return result;
 }
 
