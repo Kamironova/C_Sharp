@@ -38,3 +38,42 @@ ArrPrint(array);
 PrintArray(array);
 
 
+
+
+
+
+
+
+// Правильное решение! нужно адаптировать
+
+
+
+
+void FillArray(int[] array) // функция генерирует массив
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(-9, 10);
+        System.Console.WriteLine(array[i]);
+    }
+    
+}
+
+void PrintArray(int[] array)   // Функция печатает сгенерированный массив
+{
+    foreach (var item in array) // item  переберает каждый элемент массива
+    {
+        System.Console.Write($"{item} ");
+    }
+    System.Console.WriteLine();
+}
+
+
+
+Console.Clear();
+
+int[] array = new int[12];
+FillArray(array);
+PrintArray(array);
+
+
