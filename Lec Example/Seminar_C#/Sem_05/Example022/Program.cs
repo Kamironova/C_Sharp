@@ -4,8 +4,6 @@
 // -3; массив [6, 7, 19, 345, 3] -> да
 
 
-// Нужно понять как сделать так чтобы программа печатала
-// есть или нет только один раз !!!!!!!!
 
 
 void FillArray(int[] array)
@@ -25,21 +23,19 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-void Find(int[] array, int n)
+
+bool Find(int[] array, int n)
 {
+    bool nPresent = false;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] == n)
         {
-            System.Console.WriteLine($"Число {n} есть в массиве");
-            break;
+            nPresent = true;
         }
-        else 
-        {
-            System.Console.WriteLine($"Числа {n} нет в массиве");
-        }
-        
+
     }
+    return nPresent;
 }
 
 
@@ -57,3 +53,4 @@ int[] array = new int[4];
 FillArray(array);
 PrintArray(array);
 Find(array, n);
+System.Console.WriteLine(Find(array, n));
