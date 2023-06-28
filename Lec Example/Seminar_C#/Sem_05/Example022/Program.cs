@@ -2,6 +2,8 @@
 // присутствует ли заданное число в массиве.
 // 4; массив [6, 7, 19, 345, 3] -> нет
 // -3; массив [6, 7, 19, 345, 3] -> да
+// 
+// Усложнение!! вывод индекса ячейки массива в которой находится искомое число
 
 
 
@@ -32,11 +34,13 @@ bool Find(int[] array, int n)
         if (array[i] == n)
         {
             nPresent = true;
+            break;
         }
 
     }
     return nPresent;
 }
+
 
 
 
@@ -52,5 +56,14 @@ int n = int.Parse(Console.ReadLine()!);
 int[] array = new int[4];
 FillArray(array);
 PrintArray(array);
-Find(array, n);
+//Find(array, n);
 System.Console.WriteLine(Find(array, n));
+
+// Далее усложнение вывод индекса ячейки массива в которой находится искомое число
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i]==n)
+    {
+        System.Console.WriteLine($"Индекс введенного числа: {i}");
+    }
+}

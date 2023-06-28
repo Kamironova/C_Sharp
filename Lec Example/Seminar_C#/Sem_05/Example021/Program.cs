@@ -23,18 +23,11 @@ void Change(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] < 0)
-        {
-            array[i] *= -1;
-            System.Console.Write($"[{array[i]}]" );
-        }
-        else
-        {
-            System.Console.Write($"[{array[i]}]" );
-        }
+    
+        //array[i] *= -1;
+        array[i] = -array[i];
         
     }
-    System.Console.WriteLine();
 }
 
 
@@ -43,3 +36,4 @@ int[] array = new int[4];
 FillArray(array);
 PrintArray(array);
 Change(array);
+PrintArray(array);
