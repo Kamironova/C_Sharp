@@ -12,7 +12,7 @@ void FillArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(0, 10);
+        array[i] = new Random().Next(0, 10); //convert.toint(console.Readline()) - если задаем с консоли
     }
 }
 
