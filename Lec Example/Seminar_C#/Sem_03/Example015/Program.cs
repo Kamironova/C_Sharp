@@ -14,4 +14,4 @@ System.Console.WriteLine($"Таблица квадратов чисел от 1 �
 for (int i = 1; i <= n; i++)
 {
     System.Console.WriteLine(($"{i} в квадрате = {Math.Pow(i,2)}"));
-}
+} 
