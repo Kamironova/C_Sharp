@@ -7,10 +7,27 @@
 Console.Clear();
 
 System.Console.WriteLine("Введите пятизначное число --> ");
-int number = Convert.ToInt32(Console.ReadLine());
+int userNumber = Convert.ToInt32(Console.ReadLine());
 
-while (number > 0)
+int newNumber = 0;
+
+if (userNumber > 9999 && userNumber < 100000)
 {
-    int num1 = number % 10;
-    System.Console.WriteLine(num1);
+    for (int i = userNumber; i > 0; i /= 10)
+    {
+        newNumber = i % 10 + newNumber * 10;
+    }
+    if (userNumber == newNumber)
+    {
+        System.Console.WriteLine($"Число {userNumber} является палиндромом");
+    }
+    else 
+    {
+        System.Console.WriteLine($"Число {userNumber} не является палиндромом");
+    }
+}
+
+else
+{
+    System.Console.WriteLine("Введите пятизначное число");
 }
