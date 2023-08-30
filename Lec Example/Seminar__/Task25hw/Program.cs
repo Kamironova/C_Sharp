@@ -5,6 +5,10 @@
 
 int Product(int numberA, int numberB)
 {
+    if (numberB < 0)
+    {
+        numberB *= -1;
+    }
     int result = 1;
 
     for (int count = 1; count <= numberB; count++)
