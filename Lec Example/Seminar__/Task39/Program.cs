@@ -29,8 +29,8 @@ void PrintArray(int[] arrayPrint)
     System.Console.WriteLine();
 }
 
-int[] ArrayToChange(int[] changeArray, int number)
-{
+int[] ArrayToChange(int[] changeArray, int number)  // по второму методу
+{                                                   // с созданием нового массива
     int[] newArray = new int[number];
     for (int i = 0; i < changeArray.Length; i++)
     {
@@ -39,6 +39,17 @@ int[] ArrayToChange(int[] changeArray, int number)
     return newArray;
 }
 
+// int[] TurnArray(int[] arrayToTurn)    - по первому методу с изменением массива
+// {
+//     int temp = 0;
+//     for (int i = 0; i < arrayToTurn.Length/2; i++)
+//     {       
+//         temp = arrayToTurn[i];
+//         arrayToTurn[i] = arrayToTurn[arrayToTurn.Length-1-i];
+//         arrayToTurn[arrayToTurn.Length-1-i] = temp;
+//     }
+//     return arrayToTurn;
+// }
 
 
 
@@ -52,3 +63,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] array = GetRandomArray(userNumber, min, max);
 PrintArray(array);
 PrintArray(ArrayToChange(array, userNumber));
+//PrintArray(TurnArray(array));
