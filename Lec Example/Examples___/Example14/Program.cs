@@ -28,8 +28,9 @@ void FillImage(int row, int col)
         FillImage(row-1,col);
         FillImage(row,col-1);
         FillImage(row+1,col);
-        FillImage(row-1,col+1);
+        FillImage(row-1,col+1);// это - рекурсия, метод который вызывает сам себя
     }
+       
 }
 
 PrintImage(pic);

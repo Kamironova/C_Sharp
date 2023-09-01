@@ -6,41 +6,43 @@
 
 int[] GetRandomArray(int userNum)
 {
-    System.Console.Write("[ ");
+    
     int[] array = new int[userNum];
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(1, 10);
-        System.Console.Write($"{array[i]} ");
     }
-    System.Console.Write("]");
-    System.Console.WriteLine();
     return array;
 }
 
-void ProdactOfNumber(int[] prodArray) //int userNum)
-{
+void PrintArray(int[] array)   
+{  
     System.Console.Write("[ ");
-    int[] newArray = new int[prodArray.Length/2 + prodArray.Length % 2];
-    
-    for (int i = 0; i < prodArray.Length / 2; i++)
+    foreach (var item in array) 
     {
-        newArray[i] = prodArray[i] * prodArray[prodArray.Length -1-i];
-        System.Console.Write($"{newArray[i]} ");    
-        if (prodArray.Length % 2 == 0)
-        {
-        newArray[^1] = prodArray[prodArray.Length / 2];
-        System.Console.Write($"{newArray[^1]} ");
-        }
+        System.Console.Write($"{item} ");
+
     }
-    System.Console.Write("]");
+    System.Console.WriteLine("]");
     System.Console.WriteLine();
 }
 
-// int[] ProdPar(int[] array)
-// {
-//     int [] array1 = new int 
-// }
+
+int[] ProdArray(int[] array)
+{
+    int[] result = new int[array.Length /2 + array.Length % 2];
+
+    for (int i = 0; i < array.Length/2; i++)
+    {
+        result[i] = array[i] * array[array.Length - 1-i]; 
+    }
+    if (array.Length % 2 != 0)
+    {
+        result[^1] = array[array.Length /2];  
+        
+    }
+    return result;
+}
 
 
 Console.Clear();
@@ -49,4 +51,5 @@ System.Console.WriteLine("Введите количество элементов
 int userNumber = Convert.ToInt32(Console.ReadLine());
 
 int[] array = GetRandomArray(userNumber);
-ProdactOfNumber(array); //userNumber);
+PrintArray(array);
+PrintArray(ProdArray(array));
