@@ -60,7 +60,9 @@ int userNumber = Convert.ToInt32(Console.ReadLine());
 int min = Convert.ToInt32(Console.ReadLine());
 int max = Convert.ToInt32(Console.ReadLine());
 
+Console.ForegroundColor=ConsoleColor.Red;
 int[] array = GetRandomArray(userNumber, min, max);
 PrintArray(array);
+Console.ForegroundColor=ConsoleColor.Green;
 PrintArray(ArrayToChange(array, userNumber));
 //PrintArray(TurnArray(array));
