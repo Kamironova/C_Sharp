@@ -66,3 +66,4 @@ PrintArray(array);
 Console.ForegroundColor=ConsoleColor.Green;
 PrintArray(ArrayToChange(array, userNumber));
 //PrintArray(TurnArray(array));
+Console.ForegroundColor=ConsoleColor.White;
