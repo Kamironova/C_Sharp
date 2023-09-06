@@ -16,7 +16,7 @@ int[,] GetRandomArray(int r, int c)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i,j] = new Random().Next(1, 10);
-            System.Console.Write($"{array[i,j]} ");
+            System.Console.Write($"{array[i,j]}  ");
         }
         System.Console.WriteLine();
     }

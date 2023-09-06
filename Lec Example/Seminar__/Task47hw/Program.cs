@@ -11,8 +11,6 @@ void GetArray(double[,] array)
     Random rand = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        // array[i] = new rand.NextDouble(-9, 10);
-        // System.Console.WriteLine($"{array[i] }");
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i,j] = rand.Next(-9, 10) + rand.NextDouble();
