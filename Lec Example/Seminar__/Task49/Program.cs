@@ -70,7 +70,3 @@ int[,] secondArray = ChangeArray(firstArray);
 Print2DArray(secondArray);
 
 
-
-// Print2DArray(GetRandom2DArray(m, n));
-// System.Console.WriteLine();
-// Print2DArray(ChangeArray(GetRandom2DArray(m,n)));
