@@ -76,6 +76,7 @@ int n = Convert.ToInt32(Console.ReadLine());
  
 int[,] firstArray = GetRandom2DArray(m,n);
 PrintArray(firstArray);
+System.Console.WriteLine();
 if (m != n)
 {
     System.Console.WriteLine("Преобразование не возможно!");
