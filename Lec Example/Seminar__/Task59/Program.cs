@@ -101,7 +101,7 @@ System.Console.WriteLine($"Минимальное занчение {min}");
 PrintArray(MinDelite(firstArray, min));
 
 
-// Ниже то как решали на семинаре и не дорешали
+// Ниже то как решали на семинаре и мне это не нравится
 
 // Console.Clear();
 
