@@ -1,5 +1,5 @@
-﻿// Задайте двумерный массив. 
-// Напишите программу, которая упорядочит по убыванию 
+﻿// Задайте двумерный массив.
+// Напишите программу, которая упорядочит по убыванию
 // элементы каждой строки двумерного массива.
 // Например, задан массив:
 // 1 4 7 2
@@ -17,7 +17,7 @@ int[,] GetRandom2DArray(int m, int n)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i,j] = new Random().Next(1,10);
+            arr[i, j] = new Random().Next(1, 10);
         }
     }
     return arr;
@@ -36,33 +36,37 @@ void PrintArray(int[,] array)
         System.Console.Write($"[{i}]\t");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            System.Console.Write(array[i,j] +"\t");
+            System.Console.Write(array[i, j] + "\t");
         }
         System.Console.WriteLine();
     }
-
 }
 
-int[,] SortArray(int[,] array)
+int[,] SortArray(int[,] arrayForSort)
 {
-    int temp;
-    for (int i = 0; i < array.GetLength(0); i++)
-    {  
-        for (int j = 0; j < array.GetLength(1); j++)
+    bool sorted;
+
+    do
+    {
+        sorted = false;
+        for (int i = 0; i < arrayForSort.GetLength(0); i++)
         {
-            for (int x = 0; x < array.GetLength(0)-1; x++)
+            for (int j = 1; j < arrayForSort.GetLength(1); j++)
             {
-                if (array[i,x] < array[i,x+1])
+                if (arrayForSort[i, j - 1] < arrayForSort[i, j])
                 {
-                    temp = array[i,x+1];
-                    array[i,x+1] = array[i,x];
-                    array[i,x] = temp;    
+                    int temp = arrayForSort[i, j - 1];
+                    arrayForSort[i, j - 1] = arrayForSort[i, j];
+                    arrayForSort[i, j] = temp;
+                    sorted = true;
                 }
             }
-        }   
-    }
-    return array;
+        }
+    } while (sorted);
+
+    return arrayForSort;
 }
+
 
 Console.Clear();
 
@@ -72,7 +76,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Enter column --> ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-int[,] array = GetRandom2DArray(m,n);
+int[,] array = GetRandom2DArray(m, n);
 PrintArray(array);
 int[,] newArray = SortArray(array);
 PrintArray(newArray);
