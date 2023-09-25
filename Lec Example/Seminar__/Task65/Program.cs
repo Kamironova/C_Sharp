@@ -19,4 +19,4 @@ int m = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("N --> ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-NaturalNumbers(m,n);
+NaturalNumbers(m, n);
