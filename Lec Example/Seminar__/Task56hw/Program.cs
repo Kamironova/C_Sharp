@@ -43,49 +43,34 @@ void PrintArray(int[,] array)
 }
 
 int[] SumRowsArray(int[,] arr)
-{
-    int[] sumArray = new int[arr.GetLength(0)];
-    int sum = 0;
-    int index = 0;
-    for (int k = 0; k < sumArray.Length; k++)
-    {
-        for (int i = 0; i < arr.GetLength(0); i++)
-        {
-            // sum = sum + arr[i, 0];
-            // sumArray[k] = sum;
-            sum = sum + arr[i, j];
-            index = sum;
-            sumArray[k] = index;
-            for (int j = 0; j < arr.GetLength(1); j++)
-            {
-                // sum = sum + arr[i, j];
-                // index = sum;
-                // sumArray[k] = index;
-            }
-            //System.Console.WriteLine($"{i + 1} строка --> {sum}");
-            sum = 0;
-        }
-        //System.Console.WriteLine($"{k + 1} строка --> {sum}");
-    }
+{   
 
-    return sumArray;
+    int[] sumRow = new int[arr.GetLength(0)];
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            sumRow[i] += arr[i, j];
+        }
+        System.Console.Write($"{sumRow[i]} ");
+    }
+    System.Console.WriteLine();
+    return sumRow;
 }
 
-void MinSumRow(int[] sumArray)
+void PrintMinSum(int[] array)
 {
-    int min = 0;
-    int row = 0;
-    for (int i = 0; i < sumArray.Length; i++)
+    int min = array[0];
+    int row = 1;
+    for (int i = 1; i < array.Length; i++)
     {
-        System.Console.Write($"{sumArray[i]}  ");
-        // if (sumArray[i] > sumArray[i + 1])
-        // {
-        //     min = sumArray[i + 1];
-        // }
-        //System.Console.WriteLine($"Cтроки с наименьшей суммой элементов: {min}");
+        if(min>array[i])
+        {
+            min = array[i];
+            row = i;
+        }
     }
-
-    //System.Console.WriteLine($"Cтроки с наименьшей суммой элементов: {min}");
+    System.Console.WriteLine($"Наименьшая сумма в {row} строке равна {min}");
 }
 
 Console.Clear();
@@ -100,4 +85,4 @@ int[,] firstArray = GetRandom2DArray(m, n);
 PrintArray(firstArray);
 
 //SumRowsArray(firstArray);
-MinSumRow(SumRowsArray(firstArray));
+PrintMinSum(SumRowsArray(firstArray));
