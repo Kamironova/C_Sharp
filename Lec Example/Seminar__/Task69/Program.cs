@@ -15,9 +15,6 @@ int ProdNum(int n, int m)
     }
 }
 
-
-
-
 Console.Clear();
 
 System.Console.Write("A --> ");
